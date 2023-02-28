@@ -40,7 +40,7 @@ const TagManager = {
     })
     if (dataLayer) document.head.insertBefore(gtm.dataScript, document.head.childNodes[0])
     document.head.insertBefore(gtm.script(), document.head.childNodes[1])
-    document.body.insertBefore(gtm.noScript(), document.body.childNodes[1])
+    document.body.insertBefore(gtm.noScript(), document.body.childNodes[0])
   },
   dataLayer: function ({dataLayer, dataLayerName = 'dataLayer'}) {
     if (window[dataLayerName]) return window[dataLayerName].push(dataLayer)
